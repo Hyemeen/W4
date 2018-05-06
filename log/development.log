@@ -8652,3 +8652,437 @@ puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (229.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from require at /Users/hyemeen/Desktop/game2/bin/rails:9)
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGamemodels (20180503120231)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "gamemodels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "container" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180503120231"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-06 13:05:49.110451"], ["updated_at", "2018-05-06 13:05:49.110451"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "영원히 살 것처럼 꿈꾸고, 오늘 죽을 것처럼 살아라."], ["created_at", "2018-05-06 13:05:55.672681"], ["updated_at", "2018-05-06 13:05:55.672681"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "다음 생은 없어요. 그러니 하고 싶은 것을 하세요."], ["created_at", "2018-05-06 13:05:55.680804"], ["updated_at", "2018-05-06 13:05:55.680804"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "당신이 얼마나 행복한가는 당신의 감사의 깊이에 달려있어요."], ["created_at", "2018-05-06 13:05:55.684756"], ["updated_at", "2018-05-06 13:05:55.684756"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "지금 내리고자 하는 결정에 대해 다시금 깊이 고민 해 보세요."], ["created_at", "2018-05-06 13:05:55.688974"], ["updated_at", "2018-05-06 13:05:55.688974"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "잘하고 있어요. 겁먹지 말고 더 나아가세요."], ["created_at", "2018-05-06 13:05:55.691597"], ["updated_at", "2018-05-06 13:05:55.691597"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "힘내요, 이 한 마디라도 큰 힘이 되길 바라요."], ["created_at", "2018-05-06 13:05:55.694450"], ["updated_at", "2018-05-06 13:05:55.694450"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "평범한 여러 날들 중 하나였겠지만 수고했어요."], ["created_at", "2018-05-06 13:05:55.697177"], ["updated_at", "2018-05-06 13:05:55.697177"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "지나가는 바람에 모든 걱정 실려 보내세요."], ["created_at", "2018-05-06 13:05:55.699817"], ["updated_at", "2018-05-06 13:05:55.699817"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "바보같은 선택이예요."], ["created_at", "2018-05-06 13:05:55.702483"], ["updated_at", "2018-05-06 13:05:55.702483"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "가치 있는 포기가 될 수도 있어요."], ["created_at", "2018-05-06 13:05:55.705363"], ["updated_at", "2018-05-06 13:05:55.705363"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "새 신발을 사보는 건 어때요? 좋은 길로 데려가줄 거예요."], ["created_at", "2018-05-06 13:05:55.707552"], ["updated_at", "2018-05-06 13:05:55.707552"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "잠시 핸드폰을 내려놓고 눈을 감아보세요. 눈에게 쉼을 주세요."], ["created_at", "2018-05-06 13:05:55.710140"], ["updated_at", "2018-05-06 13:05:55.710140"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "마음의 짐이 한가득이라면 갑자기 여행을 떠나보는 건 어때요?"], ["created_at", "2018-05-06 13:05:55.712668"], ["updated_at", "2018-05-06 13:05:55.712668"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "따뜻한 차 한 잔 하며 독서의 시간을 가져보세요."], ["created_at", "2018-05-06 13:05:55.715185"], ["updated_at", "2018-05-06 13:05:55.715185"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "너무나 무모한 결정은 아니었나요?"], ["created_at", "2018-05-06 13:05:55.718189"], ["updated_at", "2018-05-06 13:05:55.718189"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "사과하고 싶다면 지금이 기회예요."], ["created_at", "2018-05-06 13:05:55.720856"], ["updated_at", "2018-05-06 13:05:55.720856"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "상대방에게 먼저 손을 내밀어 보는 게 어때요?"], ["created_at", "2018-05-06 13:05:55.723476"], ["updated_at", "2018-05-06 13:05:55.723476"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "내려놓는 편이 더 나을 수도 있어요."], ["created_at", "2018-05-06 13:05:55.726137"], ["updated_at", "2018-05-06 13:05:55.726137"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "인정하는 것도 내 능력의 일부예요."], ["created_at", "2018-05-06 13:05:55.728731"], ["updated_at", "2018-05-06 13:05:55.728731"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "gamemodels" ("container", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["container", "나보다 타인을 조금 더 신경 써보는 게 어떨까요?"], ["created_at", "2018-05-06 13:05:55.731401"], ["updated_at", "2018-05-06 13:05:55.731401"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-05-06 22:06:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (338.2ms)
+Completed 200 OK in 449ms (Views: 432.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:06:03 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.5ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 64ms (Views: 45.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:06:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (10.5ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (7.7ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (219.7ms)
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:06:06 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.2ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:06:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.1ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (6.5ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (208.9ms)
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:06:07 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.6ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.5ms)
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:06:07 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.6ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 222ms (Views: 214.0ms | ActiveRecord: 0.6ms)
+
+
+Completed 200 OK in 59ms (Views: 41.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:06:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.4ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (14.3ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (227.3ms)
+Started GET "/" for 127.0.0.1 at 2018-05-06 22:07:43 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendering games/index.html.erb within layouts/application
+  Rendered games/index.html.erb within layouts/application (384.1ms)
+Completed 200 OK in 495ms (Views: 480.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:07:45 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.5ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 30.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:07:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (3.9ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (6.2ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (201.8ms)
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:07:47 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.2ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:07:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.4ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (7.3ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (214.4ms)
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:07:48 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.8ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 156ms (Views: 109.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:07:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/result" for 127.0.0.1 at 2018-05-06 22:07:48 +0900
+Processing by GamesController#result as HTML
+  [1m[36mGamemodel Load (0.2ms)[0m  [1m[34mSELECT "gamemodels".* FROM "gamemodels"[0m
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering games/result.html.erb within layouts/application
+  Rendered games/result.html.erb within layouts/application (0.5ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+Completed 200 OK in 78ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (1.8ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.3ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+Started GET "/games/fc2_.jpg" for 127.0.0.1 at 2018-05-06 22:07:48 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/games/fc2_.jpg"):
+  
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+actionpack (5.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (292.3ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.1ms)
+  Rendered collection of /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (7.7ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hyemeen/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (234.5ms)

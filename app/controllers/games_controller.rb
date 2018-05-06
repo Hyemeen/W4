@@ -1,16 +1,8 @@
 class GamesController < ApplicationController
 
-
-	def index
-	end
-
 	def result
-
-		@fc_result = Gamemodel.find 1
-		@resultresult = @fc_result.container
-
+		@result = Gamemodel.all.sample(1)[0].container
 	end
-
 
  end
  

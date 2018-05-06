@@ -29,7 +29,7 @@ fc_string = [
      	"나보다 타인을 조금 더 신경 써보는 게 어떨까요?"
      	]
 
+     fc_string.each do |f|
+     Gamemodel.create container: f
      
-     k = fc_string.sample(1)[0]
-	Gamemodel.create container: k
-     
+end
