@@ -1,0 +1,2 @@
+class Gamemodel < ApplicationRecord
+end
